@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Created-By: Maven JAR Plugin 3.4.2
+Build-Jdk-Spec: 25
+Main-Class: Project.App
+Built-By: Tanis
+Implementation-Title: Maven
+Implementation-Version: 1.0-SNAPSHOT
+
