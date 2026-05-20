@@ -7,6 +7,7 @@ import java.awt.FontMetrics;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.GraphicsEnvironment;
 import java.awt.RenderingHints;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -317,7 +318,7 @@ public class App extends JPanel implements ActionListener, KeyListener {
             running = false;
         }
 
-        if (!running) {
+        if (!running && timer != null) {
 
             timer.stop();
         }
@@ -492,6 +493,18 @@ public class App extends JPanel implements ActionListener, KeyListener {
     // ================= MAIN =================
     public static void main(String[] args) {
 
+        // ================= HEADLESS CHECK =================
+        // Jenkins usually runs without GUI/Desktop access
+        if (GraphicsEnvironment.isHeadless()) {
+
+            System.out.println("Running in headless mode.");
+            System.out.println("GUI cannot be displayed in Jenkins.");
+            System.out.println("Build executed successfully.");
+
+            return;
+        }
+
+        // ================= NORMAL DESKTOP MODE =================
         JFrame frame = new JFrame();
 
         App game = new App();
