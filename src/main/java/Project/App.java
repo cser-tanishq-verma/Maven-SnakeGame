@@ -495,14 +495,14 @@ public class App extends JPanel implements ActionListener, KeyListener {
 
         // ================= HEADLESS CHECK =================
         // Jenkins usually runs without GUI/Desktop access
-        if (GraphicsEnvironment.isHeadless()) {
+        // if (GraphicsEnvironment.isHeadless()) {
 
-            System.out.println("Running in headless mode.");
-            System.out.println("GUI cannot be displayed in Jenkins.");
-            System.out.println("Build executed successfully.");
+        //     System.out.println("Running in headless mode.");
+        //     System.out.println("GUI cannot be displayed in Jenkins.");
+        //     System.out.println("Build executed successfully.");
 
-            return;
-        }
+        //     return;
+        // }
 
         // ================= NORMAL DESKTOP MODE =================
         JFrame frame = new JFrame();
