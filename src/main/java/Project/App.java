@@ -25,9 +25,9 @@ import javax.swing.Timer;
 public class App extends JPanel implements ActionListener, KeyListener {
 
     // ================= SCREEN =================
-    static final int SCREEN_WIDTH = 800;
-    static final int SCREEN_HEIGHT = 700;
-    static final int UNIT_SIZE = 25;
+    static final int SCREEN_WIDTH = 900;
+    static final int SCREEN_HEIGHT = 900;
+    static final int UNIT_SIZE = 30;
     static final int GAME_UNITS =
             (SCREEN_WIDTH * SCREEN_HEIGHT) / (UNIT_SIZE * UNIT_SIZE);
 
