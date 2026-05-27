@@ -1,19 +1,11 @@
 pipeline {
     agent any
-    tools {
-        jdk 'JDK17'
-        maven 'Maven3'
-    }
+
     environment {
         IMAGE_NAME = "snake-game"
         CONTAINER_NAME = "snake-container"
     }
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/cser-tanishq-verma/Maven-SnakeGame.git'
-            }
-        }
         stage('Build Maven Project') {
             steps {
                 bat 'mvn clean package'
