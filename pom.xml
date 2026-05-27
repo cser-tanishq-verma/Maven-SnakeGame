@@ -50,7 +50,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>Project.App</mainClass>
+              <mainClass>Project.WebServer</mainClass>
             </manifest>
             <manifestEntries>
               <Implementation-Title>${project.name}</Implementation-Title>

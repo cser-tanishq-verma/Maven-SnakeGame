@@ -7,7 +7,6 @@ import java.awt.FontMetrics;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.GraphicsEnvironment;
 import java.awt.RenderingHints;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -25,8 +24,8 @@ import javax.swing.Timer;
 public class App extends JPanel implements ActionListener, KeyListener {
 
     // ================= SCREEN =================
-    static final int SCREEN_WIDTH = 900;
-    static final int SCREEN_HEIGHT = 900;
+    static final int SCREEN_WIDTH = 1000;
+    static final int SCREEN_HEIGHT = 1000;
     static final int UNIT_SIZE = 30;
     static final int GAME_UNITS =
             (SCREEN_WIDTH * SCREEN_HEIGHT) / (UNIT_SIZE * UNIT_SIZE);
